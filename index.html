@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Argha Das — CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0a2540;
+      --secondary:#0077b6;
+      --bg:#f5f7fa;
+      --card:#ffffff;
+      --text:#1c1c1c;
+      --muted:#6c757d;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Montserrat,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:40px}
+    .container{max-width:1100px;margin:auto;background:var(--card);box-shadow:0 8px 28px rgba(0,0,0,0.1);border-radius:10px;overflow:hidden;display:grid;grid-template-columns:280px 1fr}
+
+    /* Sidebar */
+    .sidebar{background:var(--primary);color:#fff;padding:30px;display:flex;flex-direction:column;justify-content:space-between}
+    .name{font-size:26px;font-weight:700;margin-bottom:8px}
+    .role{font-size:14px;color:#d1d5db;margin-bottom:20px}
+    .sidebar h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px;color:#aad4ff}
+    .sidebar a{color:#fff;text-decoration:none;font-size:14px;display:block;margin-bottom:6px}
+    .profile{font-size:13px;line-height:1.5;color:#e5e5e5}
+
+    /* Main Content */
+    .main{padding:40px}
+    .section{margin-bottom:30px}
+    .section h2{font-size:18px;font-weight:700;color:var(--secondary);border-bottom:2px solid var(--secondary);padding-bottom:4px;margin-bottom:15px;text-transform:uppercase}
+    .experience-item{margin-bottom:18px}
+    .role{font-weight:600;color:var(--primary);font-size:15px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+    ul{margin:6px 0 0 18px;font-size:14px}
+
+    /* Skills */
+    .skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:20px}
+    .skill{background:var(--bg);padding:12px;border-radius:8px;text-align:center;box-shadow:inset 0 2px 4px rgba(0,0,0,0.05)}
+    .skill-name{font-size:13px;margin-bottom:6px;font-weight:600}
+    .progress{width:100%;height:8px;background:#e0e0e0;border-radius:4px;overflow:hidden}
+    .progress-bar{height:100%;background:var(--secondary)}
+
+    @media(max-width:900px){
+      .container{grid-template-columns:1fr}
+      .sidebar{flex-direction:row;align-items:flex-start;gap:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div>
+        <div class="name">Argha Das</div>
+        <div class="role">Mobile & Web Developer</div>
+        <h2>Contact</h2>
+        <a href="mailto:hdark6336@gmail.com">hdark6336@gmail.com</a>
+        <a href="tel:+919509961818">+91 95099 61818</a>
+
+        <h2>Profile</h2>
+        <p class="profile">Full‑stack developer experienced in Flutter, Python, Django, Node.js, and modern backend frameworks. Passionate about building scalable apps and delivering business solutions.</p>
+
+        <h2>Interests</h2>
+        <p class="profile">Cooking · Trekking · Reading · Writing · Gaming · Travel</p>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+      <div class="section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <div class="role">Globally Websoluton — Jan 2025 – Present</div>
+          <div class="meta">Frontend & Backend Development</div>
+          <ul>
+            <li>Gentle Iron Service: Iron service platform (HTML, Django, Flutter)</li>
+            <li>Infulancer: Social media platform data scraper (Python)</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="role">A2g Groups Pvt Ltd — Mar 2022 – Dec 2024</div>
+          <div class="meta">Mobile & Web Projects</div>
+          <ul>
+            <li>AHBMS: Business Management System (Flutter + Node.js)</li>
+            <li>UHBMS: Business Management System (Flutter + Node.js)</li>
+            <li>BMS: Business Management System (Flutter Web + FastAPI)</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="role">Other Projects</div>
+          <div class="meta">Freelance & Personal</div>
+          <ul>
+            <li>educat: Mentor‑finding platform (Flutter, Laravel)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>Shree Khandelwal Senior Secondary School</strong></p>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill"><div class="skill-name">Flutter</div><div class="progress"><div class="progress-bar" style="width:80%"></div></div></div>
+          <div class="skill"><div class="skill-name">Python</div><div class="progress"><div class="progress-bar" style="width:70%"></div></div></div>
+          <div class="skill"><div class="skill-name">Django</div><div class="progress"><div class="progress-bar" style="width:60%"></div></div></div>
+          <div class="skill"><div class="skill-name">FastAPI</div><div class="progress"><div class="progress-bar" style="width:60%"></div></div></div>
+          <div class="skill"><div class="skill-name">SQL</div><div class="progress"><div class="progress-bar" style="width:70%"></div></div></div>
+          <div class="skill"><div class="skill-name">Node.js</div><div class="progress"><div class="progress-bar" style="width:50%"></div></div></div>
+          <div class="skill"><div class="skill-name">C/C++</div><div class="progress"><div class="progress-bar" style="width:40%"></div></div></div>
+          <div class="skill"><div class="skill-name">ML / AI</div><div class="progress"><div class="progress-bar" style="width:50%"></div></div></div>
+          <div class="skill"><div class="skill-name">Firebase</div><div class="progress"><div class="progress-bar" style="width:60%"></div></div></div>
+          <div class="skill"><div class="skill-name">HTML / CSS</div><div class="progress"><div class="progress-bar" style="width:50%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
